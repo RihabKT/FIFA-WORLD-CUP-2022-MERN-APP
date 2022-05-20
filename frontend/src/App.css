@@ -1,0 +1,205 @@
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.App{
+ cursor: pointer;
+ padding: 20px;
+ background-color: antiquewhite;
+ 
+}
+
+
+
+.our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  background-color: rgb(240, 196, 196);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: rgb(128, 0, 11);
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgb(128, 0, 11);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: rgb(128, 0, 17);
+  text-transform: capitalize;
+  margin-top: 50px;
+  font-weight: bolder;
+  
+}
+
+
+.GridTeam{
+  display:grid;
+  grid-template-columns: auto auto auto auto   ;
+  margin-top: 50px;
+ grid-gap:50px;
+}
+
+.container{
+
+  margin-top: 20px;
+  padding:5px;
+  width:450%;
+ 
+}
+
+.col-12 {
+  background-color: rgba(82, 94, 95, 0.349);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.col-12:hover{
+  box-shadow: 6px 15px 13px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 6px 15px 13px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 15px 13px -2px rgba(0,0,0,0.75);
+}
+
+.cupimage{
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.flagimage{
+  width:100px;
+}
+
+.flextitle{
+display:flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+}
+
+.savebutton{
+  color:rgb(128, 0, 11);
+  border: 1px solid rgb(128, 0, 11);
+  border-radius: 5px;
+  background-color: whitesmoke;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.EditButton{
+  color:rgb(128, 0, 11);
+  border: 1px solid rgb(128, 0, 11);
+  border-radius: 5px;
+  background-color: whitesmoke;
+  font-weight: bolder;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.cancelbutton{
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color:rgb(128, 0, 11);
+  font-weight: bolder;
+  padding: 5px;
+ 
+}
+
+.DeleteButton{
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(128, 0, 11);
+  font-weight: bolder;
+  padding: 5px;
+}
+
+
+
+.flexbutton{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h1{
+  text-align: center;
+  font-weight: bolder;
+  color: darkred;
+  padding-top: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.TeamListButton{
+  margin-left: 550px;
+  padding: 15px;
+  margin-top:50px;
+}
+
+.AddTeamButton{
+  padding: 15px;
+  margin-top: 50px;
+}
+
+h3{
+  color: rgb(8, 8, 68);
+  font-weight: bolder;
+}
+
+button:hover{
+  opacity:0.7;
+}
+
